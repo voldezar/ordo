@@ -13,7 +13,7 @@ BOT_NAME = 'ordo'
 
 SPIDER_MODULES = ['ordo.spiders']
 NEWSPIDER_MODULE = 'ordo.spiders'
-
+FEED_EXPORT_ENCODING = 'utf-8'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'ordo (+http://www.yourdomain.com)'
