@@ -18,4 +18,5 @@ class FlatsSpider(scrapy.Spider):
             yield {
                 'title': flat.css('a::text').extract_first(),
                 'link': flat.css('a::attr(href)').extract_first(),
+                'price': flat.css('a::text').re('\d+\$'),
             }
