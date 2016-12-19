@@ -9,8 +9,16 @@ import scrapy
 
 
 class OrdoItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
     title = scrapy.Field()
     link = scrapy.Field()
-    pass
+    description = scrapy.Field()
+    date_created = scrapy.Field()
+    last_updated = scrapy.Field()
+    phone_number = scrapy.Field()
+    price = scrapy.Field()
+    m2 = scrapy.Field()
+    city = scrapy.Field()
+
+class Flat(OrdoItem):
+    room = scrapy.Field()
+    floor = scrapy.Field()
